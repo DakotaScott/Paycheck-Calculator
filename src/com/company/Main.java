@@ -1,7 +1,6 @@
 package com.company;
 
 import java.text.DecimalFormat;
-import java.text.NumberFormat;
 import java.util.Scanner;
 import java.math.BigDecimal;
 
@@ -20,7 +19,7 @@ public class Main {
         BigDecimal wagesPerHour;
         BigDecimal federalTaxWithheld;
         BigDecimal netEarnings = new BigDecimal("0.00");
-        BigDecimal hoursWorked = new BigDecimal("0.00");
+        BigDecimal hoursWorked;
 
         System.out.println("PAYCHECK CALCULATOR");
         System.out.println("WARNING: CALCULATIONS ONLY APPLY TO BIWEEKLY PAY PERIODS");
