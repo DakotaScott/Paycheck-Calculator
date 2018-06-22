@@ -8,25 +8,25 @@ public class TaxBrackets {
 
     public static BigDecimal singleBiweeklyWithholding(BigDecimal grossWagesWithheld) {
         // First bracket constants
-        BigDecimal FIRST_BRACKET_FLOOR = new BigDecimal("142.00");
-        BigDecimal FIRST_BRACKET_CEILING = new BigDecimal("509.00");
+        final BigDecimal FIRST_BRACKET_FLOOR = new BigDecimal("142.00");
+        final BigDecimal FIRST_BRACKET_CEILING = new BigDecimal("509.00");
         // Second bracket constants
-        BigDecimal SECOND_BRACKET_FLOOR = new BigDecimal("509.00");
-        BigDecimal SECOND_BRACKET_CEILING = new BigDecimal("1631.00");
+        final BigDecimal SECOND_BRACKET_FLOOR = new BigDecimal("509.00");
+        final BigDecimal SECOND_BRACKET_CEILING = new BigDecimal("1631.00");
         // Third bracket constants
-        BigDecimal THIRD_BRACKET_FLOOR = new BigDecimal("1631.00");
-        BigDecimal THIRD_BRACKET_CEILING = new BigDecimal("3315.00");
+        final BigDecimal THIRD_BRACKET_FLOOR = new BigDecimal("1631.00");
+        final BigDecimal THIRD_BRACKET_CEILING = new BigDecimal("3315.00");
         // Fourth bracket constants
-        BigDecimal FOURTH_BRACKET_FLOOR = new BigDecimal("3315.00");
-        BigDecimal FOURTH_BRACKET_CEILING = new BigDecimal("6200.00");
+        final BigDecimal FOURTH_BRACKET_FLOOR = new BigDecimal("3315.00");
+        final BigDecimal FOURTH_BRACKET_CEILING = new BigDecimal("6200.00");
         // Fifth bracket constants
-        BigDecimal FIFTH_BRACKET_FLOOR = new BigDecimal("6200.00");
-        BigDecimal FIFTH_BRACKET_CEILING = new BigDecimal("7835.00");
+        final BigDecimal FIFTH_BRACKET_FLOOR = new BigDecimal("6200.00");
+        final BigDecimal FIFTH_BRACKET_CEILING = new BigDecimal("7835.00");
         // Sixth bracket constants
-        BigDecimal SIXTH_BRACKET_FLOOR = new BigDecimal("7835.00");
-        BigDecimal SIXTH_BRACKET_CEILING = new BigDecimal("19373.00");
+        final BigDecimal SIXTH_BRACKET_FLOOR = new BigDecimal("7835.00");
+        final BigDecimal SIXTH_BRACKET_CEILING = new BigDecimal("19373.00");
         // Seventh bracket constants
-        BigDecimal SEVENTH_BRACKET_FLOOR = new BigDecimal("19373.00");
+        final BigDecimal SEVENTH_BRACKET_FLOOR = new BigDecimal("19373.00");
 
         // Condition statements sorts gross wage amount into appropriate tax bracket
         if (grossWagesWithheld.compareTo(FIRST_BRACKET_FLOOR) > 0 && grossWagesWithheld.compareTo(FIRST_BRACKET_CEILING) <= 0) {

@@ -10,7 +10,7 @@ public class Main {
 
         BigDecimal schoolDistricTaxRate = new BigDecimal("0.00");
         BigDecimal localTaxRate = new BigDecimal("0.00");
-        BigDecimal MEDICARE_TAX_RATE = new BigDecimal("0.0145");
+        final BigDecimal MEDICARE_TAX_RATE = new BigDecimal("0.0145");
         BigDecimal stateTax = new BigDecimal("0.00");
         BigDecimal additionalWithholdingAmt = new BigDecimal("0.00");
         BigDecimal federalTaxWithheld;
